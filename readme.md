@@ -1,6 +1,4 @@
-### [Downloads page](https://github.com/N3MTV/gcphone/releases)
-
-<h2 align="center">Téléphone pour FiveM</h2>
+<h2 align="center">Telefono FiveM</h2>
 
 ![Image of gcphone1](https://i.imgur.com/naTiBgI.png)
 ![Image of gcphone2](https://i.imgur.com/LAicovK.png)
@@ -277,5 +275,3 @@ Exemple :
 
 ## License
 [GNU v3](https://opensource.org/licenses/gpl-3.0.html)
-
-Jonathan (Gannon) D
