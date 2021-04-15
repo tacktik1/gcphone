@@ -6,16 +6,15 @@
 ![Image of gcphone4](https://i.imgur.com/rzWdDMy.png)
 ![Image of gcphone5](https://i.imgur.com/9h7eiI8.png)
 
-## Fonctionnalités 
-  - Liste des contacts
-  - Envoi de sms
-  - Appel vocal
-  - Appel anonyme
-  - Application Banque
-  - Application Tchat anonyme
-  - Application Bourse
-  - Coque / Fond ecran customisable
-  - . . .
+## Funcionalidades 
+  - Lista de contactos
+  - Envio de sms
+  - Llamar
+  - Llamada Anonima
+  - Aplicacion Banco
+  - Aplicacion Chat Anonimo
+  - Aplicacion Bolsa
+
 
 
 ## Configuration
@@ -27,10 +26,10 @@
   "//": "Nom du reseau situé dans la barre du téléphone",
   "reseau": "Gannon",
   
-  "//": "Couleur de base du téléphone",
+  "//": "Color base del telefono",
   "themeColor": "#303f9f",
 
-  "//": "Liste des couleurs pour les conctacts",
+  "//": "Lista de colores contactos",
   "colors": [
     "#EF5350",
     "#EC407A",
@@ -68,27 +67,27 @@
   },
 
 
-  "//": "Liste des fonds d'ecran disponibles, location => /html/static/img/background",
+  "//": "Lista fondos disponibles, location => /html/static/img/background",
   "background" : {
     "Calvin & Hobbes": "back001.jpg",
     "Destiny": "back002.jpg",
     "Stormtrooper": "back003.jpg",
     "Custom URL": "URL"
   },
-  "//": "Fond d'ecran par default",
+  "//": "Fuente por defecto",
   "background_default": {
     "label": "Calvin & Hobbes",
     "value": "back001.jpg"
   },
 
-  "//": "Liste des coque disponible, location => /html/static/img/coque",
+  "//": "Lista de telofonos, location => /html/static/img/coque",
   "coque": {
     "Sansumg S8": "s8.png",
     "Iphone X": "iphonex.png",
     "Brick Base": "base.png",
     "Transparent": "transparent.png"
   },
-  "//": "Coque par default",
+  "//": "Telefono por defecto",
   "coque_default": {
     "label": "Sansumg S8",
     "value": "s8.png"
