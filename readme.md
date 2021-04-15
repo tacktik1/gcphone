@@ -224,6 +224,22 @@
 }
 ```
 
+No olvide agregar los nuevos archivos en __ressource.lua
+
+Puede modificar los sonidos en \ html \ static \ sound
+Las conchas deben estar en formato 1000x500 px, el área de la pantalla está centrada en el tamaño 800 * 400
+Las aplicaciones bancarias y de la bolsa de valores deben configurarse de acuerdo con sus scripts
+Los teléfonos fijos se pueden configurar en gcphone / config.lua
+- [[
+   Tenga cuidado de no usar un número que entre en conflicto con un jugador 
+- ]] 
+FixePhone = {
+   - Estación de policía 
+  [ ' 911 ' ] = {name =   " Central Police " , coords = {x =  441.2 , y =  - 979.7 , z =  30,58 }},
+  
+  - Cabina cerca de la estación de policía 
+  [ ' 008-0001 ' ] = {name =  " Cabina telefónica " , coords = {x =  372.25 , y =  - 965.75 , z =  28.58 }},
+}
 
 ## Acerca de esx_addons_gcphone
 Permet de faire la liaison entre le téléphone et les métiers esx.
