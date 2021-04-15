@@ -16,10 +16,7 @@
 
 
 
-## Configuration
-
-
-### Modifier le fichier /html/static/config/config.json
+### Modificar el fichero /html/static/config/config.json
 ```json
 {
   "//": "Nom du reseau situé dans la barre du téléphone",
@@ -92,168 +89,147 @@
     "value": "s8.png"
   },
 
-  "//": "Configuration des appels service (Favorie)",
-  "serviceCall": [
+  " // " : " Configuración de llamada de servicio (favorito) " ,
+   " serviceCall " : [
     {
 
-      "//": "Nom de l'item",
-      "display": "Police",
+      " // " : " Nombre del elemento " ,
+       " pantalla " : " Fuente " ,
 
-      "//": "Optionnel: Couleur de puce",
-      "backgroundColor": "red",
+      " // " : " Opcional: color de la ficha " ,
+       " backgroundColor " : " rojo " ,
 
-      "//": "Optionnel: Image de la puce",
-      "icon": "/html/static/img/icons_app/bank.png",
+      " // " : " Opcional: Imagen del chip " ,
+       " icon " : " /html/static/img/icons_app/bank.png " ,
 
-      "//": "Liste des actions disponible",
-      "subMenu": [
+      " // " : " Lista de acciones disponibles " ,
+       " subMenú " : [
         {
-          "//": "Titre de l'action",
-          "title": "Envoyer un message",
+          " // " : " Título de la acción " ,
+           " título " : " Enviar un mensaje " ,
 
-          "//": "Nom de l'event trigger à l'utilisation",
-          "eventName": "esx_addons_gcphone:call",
+          " // " : " Nombre del activador del evento cuando se usa " ,
+           " eventName " : " esx_addons_gcphone: call " ,
 
-          "//": "Optionnel: Parametre 'data' envoyé avec l'event",
-          "type": {
-            "number": "police"
+          " // " : " Opcional: parámetro 'datos' enviado con el evento " ,
+           " tipo " : {
+             " número " : " policía "
           }
         },
         {
-          "title": "Appeler le standard",
-          "eventName": "gcphone:autoCallNumber",
-          "type": {
-            "number": "911"
+          " title " : " Centralita de llamadas " ,
+           " eventName " : " gcphone: autoCallNumber " ,
+           " type " : {
+             " number " : " 911 "
           }
         }
       ]
     },
     {
-      "display": "Ambulance",
-      "backgroundColor": "red",
-      "subMenu": [
+      " display " : " Ambulancia " ,
+       " backgroundColor " : " rojo " ,
+       " subMenu " : [
         {
-          "title": "Envoyer un message",
-          "eventName": "esx_addons_gcphone:call",
-          "type": {
-            "number": "ambulance"
+          " title " : " Enviar mensaje " ,
+           " eventName " : " esx_addons_gcphone: call " ,
+           " type " : {
+             " number " : " ambulance "
           }
         }
       ]
     }
   ],
   
-  "//": "Ajouter des contact par defaut",
-  "defaultContacts": [
-    { "number": "ambulance" , "display": "AABBUULLAANNCCEE", "icon": "/html/static/img/icons_app/bank.png" },
-    { "number": "police" , "display": "Police", "backgroundColor": "blue", "letter": "J" }
+  " // " : " Agregar contactos predeterminados " ,
+   " defaultContacts " : [
+    { " number " : " ambulance " , " display " : " AABBUULLAANNCCEE " , " icon " : " /html/static/img/icons_app/bank.png " },
+    { " number " : " font " , " display " : " Police " , " backgroundColor " : " blue " , " letter " : " J " }
   ],
 
-  "//": "Configuration des applications",
-  "apps": [
+  " // " : " Configuración de la aplicación " ,
+   " aplicaciones " : [
     {
-      "//": "Nom de l'application",
-      "name": "Téléphone",
+      " // " : " Nombre de la aplicación " ,
+       " nombre " : " Teléfono " ,
 
-      "//": "Icons de l'application",
-      "icons": "/html/static/img/icons_app/call.png",
+      " // " : " Iconos de la aplicación " ,
+       " iconos " : " /html/static/img/icons_app/call.png " ,
 
-      "//": "Route de l'application, NE PAS MODIFIER",
-      "routeName": "appels",
+      " // " : " Ruta de la aplicación, NO MODIFICAR " ,
+       " routeName " : " llamadas " ,
 
-      "//": "Si true, l'application serra disponible sur la home page",
-      "inHomePage": true,
+      " // " : " Si es verdadero, la aplicación estará disponible en la página de inicio " ,
+       " inHomePage " : verdadero ,
 
-      "//": "Si false, l'application n'est pas visible",
-      "enabled": true
+      " // " : " Si es falso, la aplicación no es visible " ,
+       " habilitada " : verdadero
     },
     {
-      "name": "Messages",
-      "icons": "/html/static/img/icons_app/sms.png",
-      "routeName": "messages",
-      "inHomePage": true,
+      " nombre " : " Mensajes " ,
+       " iconos " : " /html/static/img/icons_app/sms.png " ,
+       " routeName " : " mensajes " ,
+       " inHomePage " : verdadero ,
 
-      "//": "Référence au store, pour affiche un puce sous l'icone de l'app",
-      "puceRef": "nbMessagesUnread",
+      " // " : " Referencia a la tienda, para mostrar una viñeta debajo del icono de la aplicación " ,
+       " puceRef " : " nbMessagesUnread " ,
     },
     {
-      "name": "Contacts",
-      "icons": "/html/static/img/icons_app/contacts.png",
-      "routeName": "contacts",
-      "inHomePage": true
+      " nombre " : " Contactos " ,
+       " iconos " : " /html/static/img/icons_app/contacts.png " ,
+       " routeName " : " contactos " ,
+       " inHomePage " : verdadero
     },
     {
-      "name": "Paramètres",
-      "icons": "/html/static/img/icons_app/settings.png",
-      "routeName": "parametre",
-      "inHomePage": true
+      " nombre " : " Parámetros " ,
+       " iconos " : " /html/static/img/icons_app/settings.png " ,
+       " routeName " : " parámetro " ,
+       " inHomePage " : verdadero
     },
     {
-      "name": "Bank",
-      "icons": "/html/static/img/icons_app/bank.png",
-      "routeName": "bank",
-      "inHomePage": false
+      " nombre " : " Banco " ,
+       " iconos " : " /html/static/img/icons_app/bank.png " ,
+       " routeName " : " banco " ,
+       " inHomePage " : falso
     },
     {
-      "name": "Bourse",
-      "icons": "/html/static/img/icons_app/bourse.png",
-      "routeName": "bourse",
-      "enabled": true
+      " nombre " : " Bolsa " ,
+       " iconos " : " /html/static/img/icons_app/bourse.png " ,
+       " routeName " : " bolsa " ,
+       " habilitado " : verdadero
     },
     {
-      "name": "Photo",
-      "icons": "/html/static/img/icons_app/photo.png",
-      "routeName": "photo"
+      " nombre " : " Foto " ,
+       " iconos " : " /html/static/img/icons_app/photo.png " ,
+       " routeName " : " foto "
     },
     {
-      "name": "Dark Chat",
-      "icons": "/html/static/img/icons_app/tchat.png",
-      "routeName": "tchat"
+      " nombre " : " Chat oscuro " ,
+       " iconos " : " /html/static/img/icons_app/tchat.png " ,
+       " routeName " : " chat "
     }
   ],
   
-  "//": "Configuration des langues du telephone",
-  "language": {
-    "fr_FR": {
-      "NAME": "Français",
-      "KEY": "VALUE"
+  " // " : " Configuración de idioma del teléfono " ,
+   " idioma " : {
+     " fr_FR " : {
+       " NOMBRE " : " Francés " ,
+       " CLAVE " : " VALOR "
     },
-    "en_US": {
-      "NAME": "English",
-      "//": "..."
+    " en_US " : {
+       " NAME " : " Inglés " ,
+       " // " : " ... "
     },
-    "//": "Autre Langue"
+    " // " : " Otro idioma "
   }
 }
-
-```
-*N'oubliez pas de rajouter les nouveaux fichiers dans le __ressource.lua*
-
-
-* Vous pouvez modifier les sons dans \html\static\sound
-* Les coques doivent être au format 1000x500 px, La zone ecran est centrée de taille 800*400
-* Les applications Banque & Bourse sont à configurer selon vos scripts
-
-### Les postes fixes sont configurables dans gcphone/config.lua
-```LUA
---[[
-  Faites attention à ne pas utiliser un numéro qui entre en conflit avec un joueur
---]]
-FixePhone = {
-  -- Poste de police
-  ['911'] = { name =  "Central Police", coords = { x = 441.2, y = -979.7, z = 30.58 } },
-  
-  -- Cabine proche du poste de police
-  ['008-0001'] = { name = "Cabine Telephonique", coords = { x = 372.25, y = -965.75, z = 28.58 } },
-}
 ```
 
 
-## A propos de esx_addons_gcphone
+## Acerca de esx_addons_gcphone
 Permet de faire la liaison entre le téléphone et les métiers esx.
 
-Veuillez mettre esx_addons_gcphone & gcphone avant les jobs.
-Exemple :
+Pon mettre esx_addons_gcphone & gcphone antes de jobs.
+Ejemplo :
 ```yml
   # ...
 
